@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box fill">
+            <h3>Who are you?</h3>
+            <p>Fill the necessary information.</p>
+            <form>
+                <label for="fname">Your Full Name:</label>
+                <input type="text" id="fname" name="fname">
+            </form>
+        </div>
+        <div class="box choice">
+            <h3>What's your favorite city?</h3>
+            <p>Choose one.</p>
+            <form>
+                <div>
+                    <input type="radio" id="pp" name="p" value="Phnom Penh">
+                    <label for="pp">Phnom Penh</label>
+                </div>
+                <div>
+                    <input type="radio" id="hcm" name="p" value="Sihanoukville">
+                    <label for="shv">Sihanoukville</label>
+                </div>
+                <div>
+                    <input type="radio" id="src" name="p" value="Siem Reap City">
+                    <label for="src">Siem Reap City</label>
+                </div>
+                <div>
+                    <input type="radio" id="bbc" name="p" value="Battambang City">
+                    <label for="bbc">Battambang City</label>
+                </div>
+                <div>
+                    <input type="radio" id="non" name="p" value="None">
+                    <label for="non">None</label>
+                </div>
+            </form>
+        </div>
+        <div class="box write">
+            <h3>Describe yourselves</h3>
+            <p>Write your hobbies and so on.</p>
+            <form>
+                <input type="text" id="fname" name="fname">
+            </form>
+        </div>
+        <div class="box rate">
+            <h3>Rate this Survey</h3>
+            <p>How well is it so far?</p>
+            <form>
+                <div class="star-rating">
+                <input type="radio" id="rating1" name=rating value=1 checked>
+                <label for="rating1">Terrible</label> 
+                <input type="radio" id="rating2" name=rating value=2>    
+                <label for="rating2">Poor</label>    
+                <input type="radio" id="rating3" name=rating value=3>
+                <label for="rating3">Average</label>
+                <input type="radio" id="rating4" name=rating value=4> 
+                <label for="rating4">Decent</label>                    
+                <input type="radio" id="rating5" name=rating value=5>
+                <label for="rating5">Superb</label>   
+                </div>
+            </form>
+        </div>
+        <div class="box select">
+            <h3>Your favorite color</h3>
+            <p>Choose from the list.</p>
+            <form>
+                <label for="color"></label>
+                <select name="color" id="color">
+                    <option value="none">None</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="brown">Brown</option>
+                    <option value="red">Red</option>
+                    <option value="blue">Blue</option>
+                    <option value="gray">Gray</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="green">Green</option>
+                    <option value="cyan">Cyan</option>
+                    <option value="violet">Violet</option>
+                    <option value="purple">Purple</option>
+                    <option value="orange">Orange</option>
+                    <option value="indigo">Indigo</option>
+                </select>
+            </form>
+        </div>
+        <div class="box file">
+            <h3>Insert a file</h3>
+            <p>Any file!</p>
+            <form>
+                <input type="file" id="myfile" name="myfile">
+            </form>
+        </div>
+        <div class="box submit">
+            <form>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
