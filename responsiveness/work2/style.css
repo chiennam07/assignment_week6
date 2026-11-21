@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: violet;
+}
+.container{
+    margin: 30px;
+    display: grid;
+    grid-template-rows: 45vh 25vh auto;
+}
+.image{
+    height: 40vh;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Sarona_CBD_01_%28cropped%29.jpg/960px-Sarona_CBD_01_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail);
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    position: sticky;
+    top: 0;
+}
+.blockHolder{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.block, .title, .burger{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block{
+    font-size: 1.5em;
+    color: crimson;
+    background-color: skyblue;
+}
+.block:hover{
+    color: purple;
+    background-color: lightgreen;
+}
+.title{
+    background-color: olive;
+}
+.burger{
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    background-color: skyblue;
+}
+.burger span{
+    width: 80%;
+    height: 10px;
+    background-color: blue;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    margin: 20px 20px 0 20px;
+    font-size: 1.3em;
+    color: brown;
+}
+.last{
+    margin-bottom: 20px;
+}
+@media (max-width: 768px){
+    .container{
+        grid-template-rows: 30vh auto;
+    }
+    .image{
+        grid-row: 2;
+    }
+    .navbar{
+        grid-template-columns: 3fr 1fr;
+    }
+    .block{
+        font-size: 1em;
+        height: 15vh;
+    }
+    .blockHolder{
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 20vh;
+        right: 0vh;
+    }
+    .blockHolder.active{
+        display: grid;
+    }
+    .burger{
+        display: flex;
+        position: relative;
+        cursor: pointer;
+    }
+}

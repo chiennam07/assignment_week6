@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="navbar">
+            <div class="title">
+                <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Emblem_of_Israel.svg/1280px-Emblem_of_Israel.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail&_=20220906191304" height="80vh">
+            </div>
+            <div class="blockHolder" id="menu">
+                <div class="block"><h3>Home</h3></div>
+                <div class="block"><h3>About</h3></div>
+                <div class="block"><h3>Contacts</h3></div>
+            </div>
+            <div class="burger" id="burger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="textbox">
+            <div class="text">
+                <h4>Tel Aviv, officially Tel Aviv-Yafo, and also known as Tel Aviv-Jaffa, is the most populous city in the Gush Dan metropolitan area of Israel. Located on the Israeli Mediterranean coastline and with a population of 494,900, it is the economic and technological center of the country and a global high-tech hub. If East Jerusalem is considered part of Israel, Tel Aviv is the country's second-most-populous city, after Jerusalem; if not, Tel Aviv is the most populous city, ahead of West Jerusalem.</h4>
+            </div>
+            <div class="text">
+                <h4>The city was founded in 1909 by the Yishuv (Jewish residents) and initially given the Hebrew name Ahuzat Bayit (Hebrew: אחוזת בית, lit. 'House Estate' or 'Homestead'), namesake of the Jewish association which established the neighborhood as a modern housing estate on the outskirts of the ancient port city of Jaffa (Yafo in Hebrew), then part of the Mutasarrifate of Jerusalem within the Ottoman Empire. Its name was changed the following year to Tel Aviv, after the biblical name Tel Abib (lit. "Tell of Spring") adopted by Nahum Sokolow as the title for his Hebrew translation of Theodor Herzl's 1902 novel Altneuland ("Old New Land").</h4>
+            </div>
+            <div class="text last">
+                <h4>Tel Aviv's White City, designated a UNESCO World Heritage Site in 2003, comprises the world's largest concentration of International Style buildings, including Bauhaus and other related modernist architectural styles. Popular attractions include Old Jaffa, the Eretz Israel Museum, the Museum of Art, Yarkon Park, and the city's promenade and beach.</h4>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleMenu(){
+            document.getElementById('menu').classList.toggle('active');
+            document.getElementById('burger').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
